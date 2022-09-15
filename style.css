@@ -582,7 +582,7 @@ h2{
   }
   
   /* Begin Media Queries*/
-  @media screen and (max-width: 850px) {
+  @media only screen and (max-width: 850px) {
     .contact-wrapper {
       display: flex;
       flex-direction: column;
@@ -605,6 +605,14 @@ h2{
       height: 60px;
       line-height: 60px;
     }
+
+    .information {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-content {width: 90%; padding-right: 4.5rem}
+    .info-image {width: 90%}
   }
   
   @media screen and (max-width: 569px) {
@@ -645,11 +653,22 @@ h2{
   }
   
   @media screen and (max-width: 410px) {
+    
     .send-button {
       width: 99%;
     }
+
+  }
+
+
+  .error-image {
+    width: 500px;
+    height: 500px;
+
   }
 
   ::placeholder {
     color: #fff;
   }
+
+
